@@ -1,4 +1,5 @@
-
+#ifndef structures_h
+#define structures_h
 
 #define tam 250
 
@@ -21,3 +22,4 @@ MatAluno* busca_Esp(Hash tab, int RA);
 
 int tamanho_Esp(Hash tab);
 
+#endif
