@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <stddef.h>
 #include "structures.h"
 
 
@@ -39,5 +40,27 @@ int main(){
         case 2:
           printf("Digite o RA do aluno a ser removido: ");
           scanf("%d", &RA);
+          remove_Esp(tabela, RA);
+          break;
+
+        case 3:
+          printf("Digite o RA do aluno a ser buscado: ");
+          scanf("%d", &RA);
+          aluno = busca_Esp(tabela, RA);
+          if (aluno != NULL){
+            printf("Aluno encontrado:\n");
+            printf("RA: %d\n", aluno->RA);
+            printf("Nome: %s\n", aluno->nome);
+            printf("Email: %s\n", aluno->email);
+            printf("Turma: %c\n", aluno->turma);
+          }
+        else{
+          printf("Aluno nao encontrado.\n");
+        }
+        break;
       }
+}
+
+  return 0;
+
 }

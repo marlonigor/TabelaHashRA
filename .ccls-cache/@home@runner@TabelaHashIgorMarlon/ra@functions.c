@@ -1,3 +1,7 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stddef.h>
 #include "structures.h"
 
 int funcao_Esp(int RA){
@@ -47,7 +51,7 @@ MatAluno* busca_Esp(Hash tab, int RA){
   return NULL;
 }
 
-int tamanho Esp(Hash tab){
+int tamanho_Esp(Hash tab){
   int contador = 0;
   int total = 0;
 

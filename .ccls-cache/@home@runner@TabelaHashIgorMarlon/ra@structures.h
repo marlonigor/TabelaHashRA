@@ -14,7 +14,7 @@ typedef MatAluno* Hash[tam];
 
 int funcao_Esp(int RA);
 
-MatAluno* insere_Esp(Hash tab, int RA, char* name, char* mail, char turma);
+MatAluno* insere_Esp(Hash tab, int RA, char* name, char* mail, char* turma);
 
 void remove_Esp(Hash tab, int RA);
 
